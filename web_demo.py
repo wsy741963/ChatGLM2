@@ -3,8 +3,7 @@ import gradio as gr
 import mdtex2html
 from utils import load_model_on_gpus
 
-modelfile = "F:\ChatGLM2-6B\model-chatglm2-6b"
-# modelfile = "THUDM/chatglm2-6b"
+modelfile = "THUDM/chatglm2-6b"
 tokenizer = AutoTokenizer.from_pretrained(modelfile, trust_remote_code=True)
 model = AutoModel.from_pretrained(modelfile, trust_remote_code=True).cuda()
 # 多显卡支持，使用下面两行代替上面一行，将num_gpus改为你实际的显卡数量

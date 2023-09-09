@@ -1,6 +1,7 @@
 from transformers import AutoTokenizer, AutoModel
 
-modelfile = "F:\ChatGLM2-6B\model-chatglm2-6b"
+# modelfile = "F:\ChatGLM2-6B\model-chatglm2-6b"
+modelfile = "THUDM/chatglm2-6b"
 tokenizer = AutoTokenizer.from_pretrained(modelfile, trust_remote_code=True)
 model = AutoModel.from_pretrained(modelfile, trust_remote_code=True, device="cuda")
 

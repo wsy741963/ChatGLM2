@@ -16,7 +16,7 @@ from transformers import AutoTokenizer, AutoModel
 from sse_starlette.sse import ServerSentEvent, EventSourceResponse
 
 
-modelfile = "F:\ChatGLM2-6B\model-chatglm2-6b"
+modelfile = "THUDM/chatglm2-6b"
 
 
 @asynccontextmanager
